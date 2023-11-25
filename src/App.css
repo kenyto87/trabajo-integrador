@@ -1,0 +1,103 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	&:active,
+	&:focus,
+	&:visited,
+	&:hover {
+		outline: 0 solid;
+	}
+}
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+.container {
+	width: 100%;
+	max-width: 500px;
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	margin: 2rem auto;
+	min-height: 50vh;
+}
+.task-list-container {
+	padding: 20px;
+	background-color: #f8f8f8;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+}
+
+.task-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem;
+	margin: 8px 0;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item button {
+	margin-left: 8px;
+	cursor: pointer;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 4px 8px;
+}
+
+.task-item button:last-child {
+	background-color: tomato;
+}
+.task-item button:hover {
+	background-color: #2980b9;
+}
+
+.task-form-container {
+	margin: 2rem 0;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: #f8f8f8;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-form-container h2 {
+	margin-bottom: 1rem;
+}
+
+.task-form-container form {
+	display: flex;
+	gap: 10px;
+}
+
+.task-form-container input {
+	flex: 1;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.task-form-container button {
+	cursor: pointer;
+	background-color: #0ef6cc;
+	border: none;
+	border-radius: 0.25rem;
+	padding: 8px 16px;
+}
+
+.task-form-container button:hover {
+	background-color: #9df5e5;
+}
+
+.completed {
+	background-color: #f0f0f0;
+	color: #888;
+	text-decoration: line-through;
+}
